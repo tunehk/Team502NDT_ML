@@ -4,7 +4,7 @@ import keras
 import numpy as np
 
 # Optional: Add visualization capability (set to False for faster inference)
-VISUALIZE = False
+VISUALIZE = True
 if VISUALIZE:
     import plotly.graph_objects as go
 
@@ -65,9 +65,9 @@ if VISUALIZE and len(predictions) > 1:
         name='Predictions'
     ))
 
-    # Add threshold line at 0.5
-    fig.add_hline(y=0.5, line_dash="dash", line_color="red",
-                  annotation_text="Decision Threshold")
+    #  Add threshold line at 0.5
+    # fig.add_hline(y=0.5, line_dash="dash", line_color="red",
+    #               annotation_text="Decision Threshold")
 
     fig.update_layout(
         title='Defect Detection Predictions',
