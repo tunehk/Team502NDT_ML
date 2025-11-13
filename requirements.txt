@@ -1,0 +1,12 @@
+# ML-NDT Requirements
+# Install with: pip install -r requirements.txt
+
+tensorflow>=2.13.0
+numpy>=1.21.0
+plotly>=5.0.0
+
+# Ignore
+# tensorboard>=2.13.0  (included with TensorFlow)
+
+# For GPU support on NVIDIA GPUs:
+# pip install tensorflow[and-cuda]  # Installs TensorFlow with CUDA support
